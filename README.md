@@ -1,2 +1,2 @@
-# Numericne_metode_matlab
+# Numericne metode matlab
 Datoteke za Matlab
