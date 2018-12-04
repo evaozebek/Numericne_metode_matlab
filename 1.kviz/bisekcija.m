@@ -1,5 +1,5 @@
 function x = bisekcija (f,a,b,N)
-% f: funckija, katero niclo iscemo
+% f: funckija, katero niclo iscemojj
 % [a,b]: interval, na katerem iscemo niclo funkcije f
 % N: stevilo korakov bisekcije
 % x: priblizek, izracunan z bisekcijo
