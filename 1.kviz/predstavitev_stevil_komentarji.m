@@ -124,3 +124,25 @@ for i = (1 : length (X));
 end
 najmanjse_st = min(najmanjse);
 fprintf('Najmanjse stevilo iz sistema, ki je vecje od %d je %d.\n',stevilo,najmanjse_st)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%alternativa 
+
+najmanjse_stevilo = 0;
+for i = length(X);
+    if X(i) < stevilo;
+        najmanjse_stevilo = X(i);
+    end
+end
+najmanjse_stevilo
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+najvecje_stevilo = -999999999999999
+for i = length(X);
+    if X(i) > stevilo;
+        najvecje_stevilo = X(i);
+        break
+    end
+end
+najvecje_stevilo
+ 
