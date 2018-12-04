@@ -14,7 +14,7 @@ for c1 = c
         end
     end
 end
-% normalizirana števila
+% normalizirana Å¡tevila
 d = U - L +1;
 bm = b ^( t -1) ;
 Xpn = zeros (( b -1) * bm , d ) ;
@@ -24,11 +24,11 @@ end
 Xpn = Xpn (:) ;
 Xn = [- Xpn( end : -1:1) ; Xpn ];
 
-% denormalizirana števila
+% denormalizirana Å¡tevila
 Xpd = M (2: b ^( t -1) ) * b ^ L;
 Xd = [- Xpd(end: -1:1) ; Xpd ];
 
-% predstavljiva števila ( brez 0 , Inf , -Inf in NaN)
+% predstavljiva Å¡tevila ( brez 0 , Inf , -Inf in NaN)
 X = [ Xn(1: end /2) ; Xd(1: end /2) ; Xpd ; Xpn ];
 
 %delez denormaliziranih stevil
@@ -42,6 +42,8 @@ for i = (1: length(Xn));
         stevec1 = stevec1 +1
     end
 end
+
+
 
 st_pi = [];
 for i = (1 : length (X));
