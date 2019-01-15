@@ -1,7 +1,7 @@
-function [x, L, U] =  lusolve(A, b);
+function [x, L, U] =  lusolve(A, b)
 %A: kvadratna matrika
 %b: vektor desne strani sistema
-%x: resitev sistema A+x = b
+%x: resitev sistema Ax = b
 % L, U: matriki LU razcepa A (A = L*U)
 %LU razcep
 n = size(A,1);
