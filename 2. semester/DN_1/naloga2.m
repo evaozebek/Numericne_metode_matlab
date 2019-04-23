@@ -11,11 +11,11 @@ A(4,4) = 0.4;
 A(4,5) = 2;
 A(5,5) = 0.5;
 
-B = X*A*X';
+B = X*A*X^-1;
 
 [M,a] = QR_iter(B,100,10^-8);
 [M1, a1] = QR_iter_enojni(hess(B),100, 10^-8);
-[M2, a2] = QR_iter_dvojni(hess(B),1000,10^-8);
+[M2, a2] = QR_iter_dvojni(hess(B),100,10^-8);
 
 
 
