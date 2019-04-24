@@ -27,6 +27,6 @@ pp = Hermit(X, Y, dX);
 
 
 zs = ppval(pp, x);
-plot(x, G(x), '--', x, zs, 'r')
+plot(x, G(x), '--', x, zs, 'r', X,Y,'o')
 
 

@@ -6,6 +6,7 @@ function pp = Hermit(x,y,d,xx)
 %vrednosti polinoma v podanih toèkah.
 %Za izraèun vrednosti Hermitskega polinoma se uporabi funkcijo ppval(pp,x),
 %kjer je pp = Hermit(x,y,d) in x toèke v katerih išèeš vredost.
+%Èe ne poznamo vrednosti odvodov, uporabimo funkcijo pchip(x,y)
 
 %PCHIPD  Piecewise Cubic Hermite Interpolating Polynomial with Derivatives.
 %   PP = PCHIPD(X,Y,D) provides the piecewise cubic polynomial which
