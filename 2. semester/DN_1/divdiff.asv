@@ -1,7 +1,6 @@
 function [TDD, koef] = divdiff(X, F)
 %X... vektor interpolacijskih toèk
-%F... anonimna funkcija, ki jo želimo interpolirati
-%(oblike F = @(x) nekaj, nekaj)
+%F... anonimna funkcija, ki jo želimo interpolirati ( oblike 
 %
 % Opomba: Funkcija je bila spremenjena, da sprejme anonimno funkcijo ki jo
 % želimo interpolirati in sama ustvari vektor vrednosti Y in vrne tako
@@ -14,7 +13,7 @@ function [TDD, koef] = divdiff(X, F)
 %   The following formula is solved:
 %       Pn(x) = f(x0) + f[x0,x1](x-x0) + f[x0,x1,x2](x-x0)(x-x1) + ...
 %           + f[x0,x1,..,xn](x-x0)(x-x1)..(x-x[n-1])
-%       where f[x0,x1] = (f(x1)-f(x0))/(x1-x0)
+%       where f[x0,x1] = (f(x1-f(x0))/(x1-x0)
 %             f[x0,x1,..,xn] = (f[x1,..,xn]-f[x0,..,x_[n-1]])/(xn-x0)
 %
 % Example:

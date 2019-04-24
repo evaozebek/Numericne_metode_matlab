@@ -10,9 +10,9 @@ z(1,1)= 1;
 [z3] = inverzna_iteracija(A,z, 10^5, 3, 10^-10);
 [z4] = inverzna_iteracija(A,z, 10^5, 4, 10^-10);
 
-e0 = round(z0'*A*z0,10);
-e1 = round(z1'*A*z1,10);
-e3 = round(z3'*A*z3,10);
-e4 = round(z4'*A*z4,10);
+e0 = z0'*A*z0;
+e1 = z1'*A*z1;
+e3 = z3'*A*z3;
+e4 = z4'*A*z4;
 
 

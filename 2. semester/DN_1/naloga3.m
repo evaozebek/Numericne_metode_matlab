@@ -24,7 +24,7 @@ for i = 1:101
     R1(i) = abs(F(X1(i)) - Newtonov_polinom(koef, X, X1(i)));
 end
 
-rezlika = max(R1);
+razlika = max(R1);
     
     
     

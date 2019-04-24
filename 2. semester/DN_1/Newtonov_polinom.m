@@ -1,7 +1,7 @@
 function v = Newtonov_polinom(koef,X, a)
 %koef... vektor koeficientov
 %X... vektor interpolacjskih toèk
-%a... vrednost polinoma v toèki a
+%a... toèka, v kateri želimo izraèunati vrednost polinoma
 
 v = koef(1);
 for i = 2:length(X)
