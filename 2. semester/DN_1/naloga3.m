@@ -1,10 +1,15 @@
 F = @(x) (cos(2 + 2*x)).^2;
 X = zeros(5,1);
-
+Y = zeros(5,1);
+%%%%%% naredimo x (delitev)%%%%
 for i = 0:5
     X(i+1,1) = i/5;
 end
-
+%%%%%izračunamo vrednosti v podani x-ih %%%%%%
+for i = 1:5
+    Y(i,1) = F(X(i));
+end
+%%%%%%%%
 [d, koef] = divdiff(X,F);
 
 
